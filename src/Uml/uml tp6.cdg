@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="ViewBuscarCliente" package="Vistas" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jbBuscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jbSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtApellido" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtCiudad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtDni" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtTelefono" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jbSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jbBuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ViewBorrarCliente" package="Vistas" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="jbBorrarActionPerformed" type="Component" visibility="public" isStatic="true"/>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jbBorrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jbSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtApellido" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtCiudad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtDni" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtTelefono" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jtDniActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtDniKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jbSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jbBorrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ViewAgregarCliente" package="Vistas" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jbGuardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jbNuevo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jbSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtApellido" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtCiudad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtDireccion" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtDni" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtTelefono" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jbGuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jbSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtDniActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtDniKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jbNuevoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="Vistas" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+        <Field name="jAgregarCliente" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBorrarCliente" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBuscarCliente" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jbSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="principal" type="javax.swing.JDesktopPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jAgregarClienteActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBuscarClienteActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBorrarClienteActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jbSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NewMain" package="Principal" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DirectorioTelefonico" package="Entidades" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="clientes" type="HashMap&lt;Long, Cliente&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="agregarCliente" returnType="Cliente" visibility="public">
+          <Argument type="long" name="telefono"/>
+          <Argument type="Cliente" name="c1"/>
+        </Method>
+        <Method name="borrarCliente" returnType="void" visibility="public">
+          <Argument type="long" name="dni"/>
+        </Method>
+        <Method name="buscarCliente" returnType="Cliente" visibility="public">
+          <Argument type="long" name="telefono"/>
+        </Method>
+        <Method name="buscarTelefono" returnType="ArrayList" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="buscarClientes" returnType="ArrayList" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getClientes" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="Entidades" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="dni" type="long" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="long" name="dni"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="direccion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getDni" returnType="long" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="long" name="dni"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="directorio" source="Vistas.ViewBuscarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directorio" source="Vistas.Principal" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directorio" source="Vistas.ViewAgregarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="clientes" source="Entidades.DirectorioTelefonico" target="Entidades.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashMap&lt;Long, Cliente&gt;"/>
+    <HasRelation name="directorio" source="Vistas.ViewBorrarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.DirectorioTelefonico" target="Entidades.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
