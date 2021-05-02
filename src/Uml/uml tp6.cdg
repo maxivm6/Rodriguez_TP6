@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="ViewBuscarCliente" package="Vistas" visibility="public" xPosition="399.0" yPosition="746.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ViewBorrarCliente" package="Vistas" visibility="public" xPosition="58.0" yPosition="746.0">
+      <Fields>
+        <Field name="jbBorrarActionPerformed" type="Component" visibility="public" isStatic="true"/>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ViewAgregarCliente" package="Vistas" visibility="public" xPosition="733.0" yPosition="746.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DirectorioTelefonico" name="directorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ViewPrincipal" package="Vistas" visibility="public" xPosition="86.0" yPosition="18.0">
+      <Fields>
+        <Field name="directorio" type="DirectorioTelefonico" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NewMain" package="Principal" visibility="public" xPosition="1313.0" yPosition="37.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DirectorioTelefonico" package="Entidades" visibility="public" xPosition="530.0" yPosition="118.0">
+      <Fields>
+        <Field name="clientes" type="HashMap&lt;Long, Cliente&gt;" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Long" name="telefono"/>
+          <Argument type="Cliente" name="c1"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="agregarCliente" returnType="Cliente" visibility="public">
+          <Argument type="long" name="telefono"/>
+          <Argument type="Cliente" name="c1"/>
+        </Method>
+        <Method name="borrarCliente" returnType="long" visibility="public">
+          <Argument type="long" name="dni"/>
+        </Method>
+        <Method name="buscarCliente" returnType="long" visibility="public">
+          <Argument type="long" name="telefono"/>
+        </Method>
+        <Method name="buscarTelefono" returnType="String" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="buscarClientes" returnType="String" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getClientes" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="Entidades" visibility="public" xPosition="1047.0" yPosition="279.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="dni" type="long" visibility="protected"/>
+        <Field name="apellido" type="String" visibility="protected"/>
+        <Field name="ciudad" type="String" visibility="protected"/>
+        <Field name="direccion" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="long" name="dni"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="direccion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="String" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="String" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="String" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="String" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getDni" returnType="long" visibility="public"/>
+        <Method name="setDni" returnType="long" visibility="public">
+          <Argument type="long" name="dni"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="clientes" source="Entidades.DirectorioTelefonico" target="Entidades.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashMap&lt;Long, Cliente&gt;"/>
+    <HasRelation name="directorio" source="Vistas.ViewAgregarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directorio" source="Vistas.ViewBorrarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directorio" source="Vistas.ViewPrincipal" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directorio" source="Vistas.ViewBuscarCliente" target="Entidades.DirectorioTelefonico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
